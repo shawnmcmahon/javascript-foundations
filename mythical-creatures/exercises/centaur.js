@@ -73,5 +73,3 @@ console.log(this.cranky);
 
 
 module.exports = Centaur;
-
-var newCentaur = new Centaur("Shawn", "Bigone");
