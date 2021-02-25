@@ -37,7 +37,3 @@ class Fairy {
 }
 
 module.exports = Fairy;
-
-
-//var fairy1 = new Fairy(shawn);
-//var fairy2 = new Fairy(beau);
