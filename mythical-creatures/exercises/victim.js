@@ -5,5 +5,5 @@ class Victim {
   }
 }
 
-//adding comment to push to github
+//add to werewolf branch
 module.exports = Victim;

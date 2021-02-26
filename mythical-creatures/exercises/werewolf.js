@@ -29,5 +29,5 @@ class Werewolf {
   }
 
 }
-
+//Add to werewolf branch
 module.exports = Werewolf;
