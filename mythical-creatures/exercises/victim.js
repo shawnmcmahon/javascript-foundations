@@ -4,5 +4,4 @@ class Victim {
     this.alive = true;
   }
 }
-
 module.exports = Victim;
