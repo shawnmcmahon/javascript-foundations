@@ -1,7 +1,7 @@
 class Stark{
   constructor(details) {
     this.name = details.name || 'Shawn';
-    this.location = details.location || 'Winterfell';
+    this.location = details.area || 'Winterfell';
     this.safe = false;
 
   }
