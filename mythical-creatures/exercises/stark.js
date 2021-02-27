@@ -1,7 +1,7 @@
 class Stark{
   constructor(details) {
-    this.name = details.name || 'Shawn';
-    this.location = details.location || 'Winterfell';
+    this.name = details.name;
+    this.location = details.area || 'Winterfell';
     this.safe = false;
 
   }
@@ -15,7 +15,7 @@ class Stark{
   }
 
   callDirewolf(direwolf) {
-    console.log(direwolf);
+    
   }
 
 }
