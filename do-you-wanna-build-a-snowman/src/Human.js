@@ -25,11 +25,18 @@ class Human {
 
   }
 
-    buildASnowman(snowman){
-      snowman.coal = this.materials.coal;
-      snowman.carrots = this.materials.carrots;
-      snowman.buttons = this.materials.buttons;
-      snowman.snowballs = this.materials.snowballs;
+    buildASnowman(){
+      var newSnowman = new Snowman(this.materials);
+      //return an instaniated snowman when called
+      return newSnowman
+    }
+
+    placeMagicHat() {
+
+      //the instance of the snowman just built magicHat needs to be assigned to true
+      //this.magicHat = true;
+      //return 'Woah, this snowman is coming to life!'
+      return 'Woah, this snowman is coming to life!';
     }
 
 }
