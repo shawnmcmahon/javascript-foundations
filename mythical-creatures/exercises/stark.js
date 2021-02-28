@@ -15,7 +15,11 @@ class Stark{
   }
 
   callDirewolf(direwolf) {
-    
+    const newDirewolf = direwolf;
+    const newStark = new Stark(stark.name, stark.area);
+    newDirewolf.protect(newStark)
+    console.log(newDirewolf.home);
+
   }
 
 }
