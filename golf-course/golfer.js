@@ -2,7 +2,6 @@ class Golfer {
   constructor(details) {
     this.name = details.name;
     this.handicap = details.handicap;
-    this.openings = details.openings
     this.frustration = 0;
     this.confidence = 0;
   }
