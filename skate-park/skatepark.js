@@ -10,13 +10,18 @@ class Skatepark {
   }
 
   admit(skater) {
-    if(!this.isPrivate && skater.money >= this.cost) {
-      skater.money = skater.money - this.cost;
-      this.occupants.push(skater);
-      return 'Welcome to the free Major Taylor Skatepark!';
-    } else {
-      return 'Welcome to Curbside, the cost will be $12.00.';
-    }
+      if (this.occupants.length >= 3) {
+        return 'Sorry, we are at max capacity. Thank you for understanding.'
+      } else if(!this.isPrivate) {
+        this.occupants.push(skater);
+        return 'Welcome to the free Major Taylor Skatepark!';
+      } else if (this.isPrivate && skater.money >= this.cost){
+        skater.money -= this.cost;
+        this.occupants.push(skater);
+        return `Welcome to Curbside, the cost will be $12.00.`;
+      } else {
+        return 'Sorry, you don\'t have enough money.'
+      }
   }
 }
 
