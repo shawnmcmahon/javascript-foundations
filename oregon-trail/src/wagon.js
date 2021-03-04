@@ -27,14 +27,17 @@ class Wagon {
   canTravel() {
     for (var i = 0; i < this.wheels.length; i++) {
 
-      if (this.wheels.length <= 3 || this.axles.length <= 1 ||
+      if (this.wheels.length < 3 || this.axles.length <= 1 ||
           this.oxen.length <= 1 || this.yokes.length < 1 ||
-          this.settlers.length < 1 || this.wheels[i].broken) {
-            return false
-    }     else {
-        return true;
+          this.settlers.length < 1 || this.wheels[i].broken ||
+          this.axles[i].broken || this.oxen[i].broken) {
+          return false;
+        } else if (this.oxen.length % this.yokes.length === 0) {
+          return false;
+        } else {
+          return true;
+        }
     }
-  }
   }
 
 
