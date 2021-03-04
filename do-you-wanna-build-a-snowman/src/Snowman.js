@@ -12,12 +12,10 @@ class Snowman {
     if (this.buttons >= 5 && this.coal >= 2) {
       this.magicHat = true;
     }
-    
+
     if (this.carrots < 1 || this.snowballs < 2) {
       this.magicHat = false;
     }
   }
-
 }
-
 module.exports = Snowman;
